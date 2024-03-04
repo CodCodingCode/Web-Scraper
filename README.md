@@ -28,4 +28,4 @@ This project is open-sourced under the MIT License. See the LICENSE file for mor
 This script is provided for educational purposes only. Use it responsibly and in accordance with Google's terms of service. The author is not responsible for any potential misuse or legal implications.
 
 ## Contact
-Your Name - nathanyan2008p@gmail.com
+Nathan Yan - nathanyan2008p@gmail.com
