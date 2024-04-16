@@ -2,8 +2,11 @@ from bs4 import BeautifulSoup
 import requests
 from selenium import webdriver
 import time
+<<<<<<< HEAD
 from selenium.webdriver.common.by import By
 
+=======
+>>>>>>> 507c24a76cb75307e2c735b14a6fd631ba7d2a86
 
 typeOfSearch = input("Enter what category you want: ")
 driver = webdriver.Chrome()
@@ -14,6 +17,7 @@ driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 time.sleep(5)
 soup = BeautifulSoup(driver.page_source, 'html.parser')
 
+<<<<<<< HEAD
 SCROLL_PAUSE_TIME = 0.5
 
 # Get scroll height
@@ -32,6 +36,8 @@ while True:
         break
     last_height = new_height
 
+=======
+>>>>>>> 507c24a76cb75307e2c735b14a6fd631ba7d2a86
 #Store Company Name and links to the maps we need
 links = []
 company = []
@@ -39,15 +45,22 @@ company = []
 for link in soup.find_all("a", class_ = "hfpxzc"):
     links.append(link.get("href"))
     company.append(link.get("aria-label"))
+<<<<<<< HEAD
     time.sleep(5)
+=======
+>>>>>>> 507c24a76cb75307e2c735b14a6fd631ba7d2a86
 numbers = []
 
 print(company)
 print(links)
+<<<<<<< HEAD
 
 driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 
 for i in range(10):
+=======
+for i in range(3):
+>>>>>>> 507c24a76cb75307e2c735b14a6fd631ba7d2a86
     driver.get(links[i])
     time.sleep(5)
     soup = BeautifulSoup(driver.page_source, 'html.parser')
@@ -66,3 +79,7 @@ print(numbers)
 driver.quit()
         
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 507c24a76cb75307e2c735b14a6fd631ba7d2a86
